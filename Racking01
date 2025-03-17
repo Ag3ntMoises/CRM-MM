@@ -1,1 +1,1415 @@
-Enter the code 
+<?neo version='2.47.473.0'?>
+<natss:NeoElementCanvas Name="m_EditorCanvas" Width="1024" Height="600" FocusVisualStyle="{x:Null}" AllowDrop="True" ClipToBounds="True" Focusable="True" TextOptions.TextFormattingMode="Display" TextOptions.TextRenderingMode="ClearType" Panel.ZIndex="104" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:natss="clr-namespace:Neo.ApplicationFramework.Tools.Screen.ScreenEditor;assembly=ToolsIde" xmlns:nacs="clr-namespace:Neo.ApplicationFramework.Controls.Symbol;assembly=Controls" xmlns:nacsd="clr-namespace:Neo.ApplicationFramework.Controls.Screen.Design;assembly=Controls" xmlns:nai="clr-namespace:Neo.ApplicationFramework.Interfaces;assembly=Interfaces" xmlns:nac="clr-namespace:Neo.ApplicationFramework.Controls;assembly=Controls" xmlns:nacc="clr-namespace:Neo.ApplicationFramework.Controls.Controls;assembly=Controls" xmlns:nata="clr-namespace:Neo.ApplicationFramework.Tools.Action;assembly=Tools" xmlns:nacd="clr-namespace:Neo.ApplicationFramework.Common.Data;assembly=CommonCF" xmlns:nacd1="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=Common" xmlns:nacd2="clr-namespace:Neo.ApplicationFramework.Common.Dynamics;assembly=CommonCF" xmlns:nacgl="clr-namespace:Neo.ApplicationFramework.Common.Graphics.Logic;assembly=CommonCF" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:nacb="clr-namespace:Neo.ApplicationFramework.Common.Bevel;assembly=Common" xmlns:nacc1="clr-namespace:Neo.ApplicationFramework.Common.Converters;assembly=Common" xmlns:nac1="clr-namespace:Neo.ApplicationFramework.Common;assembly=Common" xmlns:nacb1="clr-namespace:Neo.ApplicationFramework.Controls.Blink;assembly=Controls">
+  <nacs:Picture SymbolName="11" Stretch="True" Transparent="True" FontSize="15" Name="Picture" Width="837" Height="438" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="2" Canvas.Left="20" Canvas.Top="83" nacsd:EditorProperties.IsLocked="False">
+    <nai:ActionProperties.Actions>
+      <nai:ActionList />
+    </nai:ActionProperties.Actions>
+  </nacs:Picture>
+  <nac:DigitalClock DisplayFormat="DateAndTime" ShowSeconds="True" ShowDayOfWeek="False" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="宋体" FontSize="20" FontStyle="Normal" FontWeight="Bold" Name="DigitalClock2" Width="206.63" MinWidth="206.63" Height="54" MinHeight="22.8133333333333" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="6" Canvas.Left="6" Canvas.Top="0" />
+  <nac:Label WordWrap="True" Text="有轨巷道起重机控制系统" TextDecorations="{x:Null}" Background="#00FFFFFF" Foreground="#FFFFFFFF" FontFamily="宋体" FontSize="36" FontStyle="Normal" FontWeight="Normal" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="9,0,9,1" Name="Text" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="9" Canvas.Left="228" Canvas.Top="12" />
+  <nacs:SymbolControl RequiresTransparency="False" ForceTransparency="False" BorderBrush="{x:Null}" BorderThickness="0,0,0,0" Background="#FF004040" FontSize="7" FontStyle="Normal" FontWeight="Normal" Name="SymbolControl1" Width="1010" Height="466" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="1" Canvas.Left="6" Canvas.Top="68" nacsd:EditorProperties.IsLocked="True" nacsd:EditorProperties.IsHidden="False">
+    <nacs:SymbolControl.Template>
+      <ControlTemplate TargetType="nacs:SymbolControl">
+        <Grid>
+          <nacc:Rectangle Fill="{TemplateBinding BorderBrush}" />
+          <nacc:Rectangle RadiusX="25" RadiusY="25" Fill="#FFFFFFFF" Stroke="#FF000000" />
+          <nacc:Rectangle RadiusX="22" RadiusY="22" Fill="{TemplateBinding Background}" StrokeThickness="10" Margin="4,4,4,4" />
+        </Grid>
+      </ControlTemplate>
+    </nacs:SymbolControl.Template>
+  </nacs:SymbolControl>
+  <nacs:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="SymbolViewbox" Width="55" Height="72" RenderTransform="Identity" Visibility="Visible" Panel.ZIndex="19" Canvas.Left="42" Canvas.Top="437">
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:Action Name="Show Screen">
+          <nata:Action.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="Show" ObjectName="系统设置" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" ObjectPath="" ExplicitAuditTrail="False">
+              <nata:ActionMethodInfo.ActionParameterInfo>
+                <nai:ActionParameterInfoList>
+                  <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                </nai:ActionParameterInfoList>
+              </nata:ActionMethodInfo.ActionParameterInfo>
+            </nata:ActionMethodInfo>
+          </nata:Action.ActionMethodInfo>
+        </nata:Action>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+    <Viewbox Width="231.188" Height="231.189">
+      <Canvas Width="231.188" Height="231.189">
+        <Canvas>
+          <Canvas>
+            <Canvas>
+              <Path Data="F1M160.142,206.255C160.12,206.028,157.824,183.55,147.251,172.977L75.25,100.977C69.711,95.438,62.867,92.33,51.622,90.248L47.561,89.496 87.322,49.734 88.074,53.795C90.156,65.04,93.265,71.885,98.801,77.423L170.804,149.425C181.396,160.015,203.855,162.294,204.081,162.316L208.664,162.758 200.441,170.979 199.61,171.024C191.825,171.438 184.332,174.868 178.513,180.688 172.696,186.505 169.263,193.998 168.851,201.783L168.806,202.615 160.587,210.833 160.142,206.255z" Fill="#FF656565" />
+              <Path Data="F1M177.746,178.383C184.155,171.974,192.291,168.509,200.263,168.087L204.64,163.709C204.64,163.709 181.301,161.456 170.036,150.191 158.772,138.928 104.562,84.72 98.034,78.191 91.506,71.664 88.625,63.791 86.706,53.423L52.785,87.343C63.153,89.263 71.026,92.144 77.553,98.672 84.082,105.2 138.291,159.409 149.556,170.674 160.82,181.938 163.072,205.276 163.072,205.276L167.449,200.9C167.872,192.928,171.337,184.791,177.746,178.383z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="146.943,-165.786" EndPoint="146.943,-107" MappingMode="Absolute" Transform="0.707,0.707,0.707,-0.707,119.34,-72.909">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF93A8B3" Offset="0" />
+                        <GradientStop Color="#FFA0B5B5" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M165.563,195.07C163.761,186.857,160.021,174.995,152.627,167.601L80.626,95.6C75.325,90.298,69.137,86.957,60.079,84.659L85.557,59.18C87.856,68.238,91.197,74.426,96.498,79.728L168.5,151.729C175.893,159.121 187.757,162.863 195.969,164.664 188.641,166.078 181.757,169.762 176.209,175.313 170.661,180.86 166.977,187.742 165.563,195.07z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="145.844,-156.808" EndPoint="145.844,-113.807" MappingMode="Absolute" Transform="0.707,0.707,0.707,-0.707,119.34,-72.909">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFBFC8CD" Offset="0" />
+                        <GradientStop Color="#FFE3EDF1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M195.969,164.664C187.757,162.863,175.893,159.121,168.5,151.729L96.498,79.728C91.197,74.426,87.856,68.238,85.557,59.18L60.079,84.659C69.137,86.957,75.325,90.298,80.626,95.6L152.627,167.601C160.021,174.995 163.761,186.857 165.563,195.07 166.977,187.742 170.661,180.86 176.209,175.313 181.757,169.762 188.641,166.078 195.969,164.664L195.969,164.664z M185.016,164.972C180.971,166.986 177.222,169.691 173.905,173.007 170.589,176.323 167.887,180.072 165.871,184.117 163.529,177.403 160.051,170.417 154.931,165.297L82.93,93.296C78.327,88.694,73.049,85.443,66.25,83.093L83.993,65.353C86.343,72.152,89.593,77.43,94.194,82.031L166.197,154.031C171.316,159.152,178.303,162.629,185.016,164.972">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="144.429,-185.002" EndPoint="144.429,-49.111" MappingMode="Absolute" Transform="0,1,1,0,245.081,-17.304">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFBFC8CD" Offset="0" />
+                        <GradientStop Color="#FFD6DFE4" Offset="0.63" />
+                        <GradientStop Color="#FFFFFFFF" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M15.945,87.341C7.172,78.567,2.323,65.867,2.637,52.495L2.751,47.655 34.175,61.292C41.386,64.421 47.851,60.85 51.909,51.496 54.994,44.387 54.637,38.185 50.928,34.477 49.878,33.426 48.54,32.543 46.948,31.854L15.526,18.217 18.982,14.829C32.824,1.256 52.307,-2.941 68.618,4.136 73.406,6.214 77.713,9.146 81.417,12.851 95.077,26.51 98.601,48.715 90.188,68.106 79.191,93.446 51.624,105.98 28.733,96.048 23.95,93.972 19.647,91.042 15.945,87.341z" Fill="#FF656565" />
+              <Path Data="F1M18.471,85.802C10.117,77.448,5.499,65.326,5.8,52.544L5.838,50.931 34.301,63.285C42.654,66.907 50.352,62.822 54.893,52.358 58.35,44.389 57.826,37.311 53.454,32.939 52.209,31.693 50.646,30.658 48.805,29.86L20.342,17.508 21.492,16.379C34.701,3.427 53.249,-0.596 68.743,6.127 73.28,8.096 77.36,10.874 80.872,14.385 93.908,27.42 97.247,48.661 89.186,67.24 78.666,91.48 52.38,103.51 30.591,94.055 26.056,92.087 21.979,89.311 18.472,85.803 18.471,85.803 18.471,85.803 18.471,85.802z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="37.701,-183.555" EndPoint="37.701,-88.929" MappingMode="Absolute" Transform="0.707,0.707,0.707,-0.707,119.34,-72.909">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF93A8B3" Offset="0" />
+                        <GradientStop Color="#FFA0B5B5" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M21.542,82.73C14.53,75.716,10.362,65.798,9.863,55.13L33.773,65.504C43.845,69.873 53.376,65.039 58.649,52.888 62.669,43.626 61.895,35.235 56.527,29.867 54.992,28.331 53.087,27.065 50.869,26.103L26.959,15.726C38.986,5.478 54.857,2.553 68.214,8.349 72.373,10.153 76.115,12.701 79.335,15.922 91.433,28.019 94.499,47.812 86.963,65.174 77.161,87.768 52.797,99.038 32.655,90.297 28.499,88.494 24.761,85.947 21.543,82.731 21.543,82.731 21.543,82.73 21.542,82.73z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="37.783,-179.21" EndPoint="37.783,-91.103" MappingMode="Absolute" Transform="0.707,0.707,0.707,-0.707,119.34,-72.909">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFBFC8CD" Offset="0" />
+                        <GradientStop Color="#FFE3EDF1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M79.335,15.922C76.115,12.701 72.373,10.153 68.214,8.349 54.857,2.553 38.986,5.478 26.959,15.726L50.869,26.103C53.087,27.065 54.992,28.331 56.527,29.867 61.895,35.235 62.669,43.626 58.649,52.888 53.376,65.039 43.845,69.873 33.773,65.504L9.863,55.13C10.362,65.798 14.53,75.716 21.542,82.73 21.543,82.73 21.543,82.73 21.543,82.73 24.761,85.947 28.499,88.494 32.655,90.297 52.797,99.038 77.161,87.768 86.963,65.174 94.499,47.812 91.433,28.019 79.335,15.922L79.335,15.922z M77.033,18.225C88.191,29.385 90.982,47.731 83.973,63.877 79.552,74.07 71.861,82.115 62.318,86.529 52.903,90.884 42.83,91.161 33.952,87.309 30.173,85.668 26.775,83.353 23.847,80.426 18.577,75.157 15.07,68.162 13.708,60.349L32.477,68.494C44.21,73.584 55.659,67.969 61.638,54.186 66.218,43.63 65.195,33.927 58.831,27.563 57.005,25.735 54.762,24.239 52.166,23.113L33.397,14.969C43.823,8.155 56.262,6.715 66.917,11.338 70.7,12.979 74.102,15.296 77.033,18.225">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="66.636,-235.217" EndPoint="66.636,-154.026" MappingMode="Absolute" Transform="0,1,1,0,245.081,-17.304">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFBFC8CD" Offset="0" />
+                        <GradientStop Color="#FFD6DFE4" Offset="0.63" />
+                        <GradientStop Color="#FFFFFFFF" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M178.176,200.789C179.635,202.248 180.333,204.357 179.999,206.296 179.999,206.296 179.853,207.134 179.85,207.147 179.867,207.146 180.7,207.002 180.7,207.002 182.642,206.666 184.751,207.364 186.209,208.822 186.842,209.454 187.313,210.184 187.609,210.989 187.609,210.989 187.902,211.787 187.907,211.8 187.919,211.79 188.573,211.246 188.573,211.246 190.807,209.382 194.31,209.382 196.547,211.247 196.547,211.247 197.199,211.79 197.213,211.8 197.217,211.785 197.511,210.99 197.511,210.99 198.515,208.257 201.548,206.505 204.417,207.001 204.417,207.001 205.253,207.146 205.268,207.148 205.266,207.133 205.122,206.3 205.122,206.3 204.625,203.427 206.376,200.396 209.108,199.39 209.108,199.39 209.906,199.097 209.92,199.092 209.911,199.079 209.368,198.427 209.368,198.427 207.501,196.191 207.501,192.688 209.367,190.451 209.367,190.451 209.91,189.8 209.919,189.786 209.906,189.781 209.111,189.49 209.111,189.49 208.303,189.192 207.575,188.722 206.942,188.091 205.483,186.631 204.787,184.521 205.121,182.582 205.121,182.582 205.266,181.745 205.269,181.73 205.253,181.732 204.418,181.878 204.418,181.878 202.478,182.213 200.368,181.514 198.909,180.057 198.277,179.424 197.806,178.695 197.51,177.892 197.51,177.892 197.217,177.095 197.211,177.08 197.199,177.089 196.546,177.633 196.546,177.633 194.312,179.496 190.807,179.496 188.573,177.632 188.573,177.632 187.92,177.089 187.907,177.078 187.902,177.093 187.609,177.889 187.609,177.889 186.606,180.621 183.572,182.376 180.702,181.878 180.702,181.878 179.866,181.732 179.851,181.73 179.854,181.746 179.998,182.58 179.998,182.58 180.495,185.454 178.743,188.486 176.008,189.488 176.008,189.488 175.213,189.781 175.2,189.786 175.208,189.8 175.752,190.453 175.752,190.453 177.616,192.689 177.616,196.191 175.751,198.427 175.751,198.427 175.208,199.078 175.2,199.092 175.211,199.097 176.008,199.39 176.008,199.39 176.816,199.687 177.543,200.157 178.176,200.789z M167.087,219.913C153.042,205.867 153.042,183.013 167.087,168.968 181.132,154.922 203.987,154.922 218.032,168.968 232.078,183.013 232.078,205.866 218.031,219.911 203.986,233.958 181.132,233.959 167.087,219.913z" Fill="#FF656565" />
+              <Path Data="F1M205.487,208.676L204.724,208.545C203.027,208.249,201.152,209.332,200.557,210.95L200.29,211.677C199.695,213.295,198.126,213.715,196.803,212.61L196.209,212.116C194.885,211.012,192.719,211.011,191.397,212.114L190.801,212.61C189.479,213.717,187.91,213.295,187.315,211.677L187.048,210.951C186.454,209.332,184.578,208.249,182.881,208.545L182.119,208.676C180.419,208.97,179.272,207.822,179.566,206.124L179.699,205.362C179.992,203.664,178.91,201.788,177.292,201.193L176.564,200.927C174.946,200.333,174.527,198.764,175.63,197.441L176.126,196.846C177.232,195.521,177.23,193.356,176.126,192.033L175.63,191.439C174.528,190.115,174.947,188.547,176.565,187.952L177.292,187.685C178.911,187.091,179.993,185.217,179.699,183.518L179.566,182.755C179.272,181.057,180.419,179.908,182.119,180.202L182.881,180.336C184.58,180.63,186.455,179.545,187.048,177.93L187.315,177.202C187.911,175.583,189.479,175.164,190.802,176.269L191.397,176.763C192.719,177.867,194.886,177.867,196.208,176.763L196.803,176.269C198.127,175.164,199.695,175.583,200.289,177.202L200.556,177.93C201.152,179.545,203.027,180.63,204.724,180.336L205.487,180.202C207.186,179.908,208.334,181.056,208.04,182.755L207.907,183.518C207.613,185.217,208.695,187.091,210.313,187.686L211.04,187.953C212.658,188.547,213.079,190.117,211.974,191.439L211.478,192.033C210.375,193.356,210.375,195.522,211.479,196.847L211.974,197.44C213.078,198.763,212.658,200.332,211.041,200.927L210.313,201.194C208.696,201.788,207.613,203.664,207.907,205.362L208.04,206.124C208.333,207.822,207.186,208.97,205.487,208.676z M217.74,170.503C204.519,157.284 183.086,157.282 169.866,170.503 156.646,183.723 156.646,205.157 169.866,218.377 183.085,231.596 204.518,231.595 217.739,218.376 230.958,205.156 230.958,183.723 217.74,170.503z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="211.743,-85.129" EndPoint="211.743,-17.426" MappingMode="Absolute" Transform="0,1,1,0,245.081,-17.304">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FF93A8B3" Offset="0" />
+                        <GradientStop Color="#FFA0B5B5" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M176.264,204.328C176.431,204.493,176.498,204.729,176.488,204.807L176.354,205.564C176.032,207.436 176.556,209.215 177.791,210.451 179.026,211.687 180.807,212.211 182.674,211.887L183.44,211.754C183.514,211.745 183.749,211.811 183.915,211.978 183.964,212.027 183.987,212.065 183.991,212.075L184.256,212.798C184.565,213.64 185.021,214.367 185.615,214.961 187.582,216.927 190.641,216.991 192.89,215.113L193.483,214.617C193.609,214.52,193.998,214.521,194.124,214.618L194.718,215.113C196.17,216.327 197.973,216.765 199.662,216.312 201.351,215.859 202.694,214.58 203.349,212.802L203.617,212.072C203.676,211.927,204.013,211.733,204.17,211.754L204.928,211.887C206.798,212.211 208.579,211.687 209.814,210.451 211.049,209.215 211.573,207.436 211.25,205.568L211.118,204.803C211.097,204.648,211.292,204.313,211.438,204.253L212.163,203.985C213.944,203.331 215.224,201.988 215.674,200.3 216.127,198.609 215.69,196.809 214.476,195.353L213.982,194.759C213.885,194.633,213.884,194.244,213.981,194.119L214.477,193.523C216.354,191.279 216.29,188.22 214.323,186.254 213.729,185.66 213.002,185.202 212.164,184.893L211.435,184.627C211.428,184.625 211.39,184.602 211.34,184.553 211.174,184.386 211.107,184.151 211.118,184.073L211.25,183.313C211.574,181.443 211.05,179.664 209.814,178.427 208.58,177.191 206.799,176.668 204.93,176.993L204.166,177.125C204.091,177.134 203.856,177.067 203.69,176.901 203.64,176.852 203.619,176.815 203.614,176.804L203.349,176.079C203.04,175.238 202.583,174.514 201.989,173.92 200.024,171.955 196.966,171.89 194.715,173.766L194.124,174.262C193.997,174.357,193.609,174.357,193.483,174.262L192.887,173.765C191.434,172.552 189.632,172.115 187.943,172.567 186.254,173.018 184.911,174.298 184.256,176.078L183.99,176.806C183.928,176.95,183.592,177.146,183.436,177.125L182.677,176.993C180.806,176.669 179.026,177.191 177.791,178.428 176.556,179.664 176.032,181.444 176.354,183.311L176.488,184.077C176.508,184.229,176.315,184.566,176.169,184.626L175.442,184.892C173.662,185.549 172.381,186.892 171.93,188.58 171.477,190.269 171.916,192.071 173.128,193.527L173.625,194.119C173.72,194.243,173.721,194.631,173.625,194.758L173.127,195.353C171.251,197.602 171.316,200.662 173.282,202.626 173.875,203.221 174.602,203.677 175.443,203.985L176.168,204.254C176.176,204.256,176.215,204.277,176.264,204.328z M172.169,216.073C160.242,204.145 160.242,184.736 172.169,172.809 184.098,160.879 203.507,160.879 215.435,172.809 227.364,184.736 227.363,204.144 215.434,216.072 203.506,228.001 184.098,228.001 172.169,216.073z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="211.744,-81.856" EndPoint="211.744,-20.699" MappingMode="Absolute" Transform="0,1,1,0,245.081,-17.304">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFBFC8CD" Offset="0" />
+                        <GradientStop Color="#FFE3EDF1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M216.204,172.039C204.276,160.111 184.867,160.111 172.938,172.039 161.009,183.968 161.009,203.377 172.938,215.304 184.867,227.232 204.274,227.232 216.204,215.303 228.131,203.376 228.131,183.968 216.204,172.039L216.204,172.039z M214.667,173.574C225.748,184.655 225.748,202.686 214.667,213.768 203.584,224.85 185.555,224.85 174.474,213.769 163.392,202.687 163.392,184.657 174.475,173.574 185.555,162.493 203.586,162.493 214.667,173.574">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="210.975,-81.088" EndPoint="210.975,-19.931" MappingMode="Absolute" Transform="0,1,1,0,245.081,-17.304">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFBFC8CD" Offset="0" />
+                        <GradientStop Color="#FFD6DFE4" Offset="0.63" />
+                        <GradientStop Color="#FFFFFFFF" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Canvas>
+                <Path Data="F1M95.926,88.21C94.046,86.33 90.988,86.33 89.107,88.21 87.227,90.089 87.227,93.148 89.108,95.028L154.128,160.048C156.009,161.93 159.068,161.93 160.948,160.049 162.828,158.169 162.828,155.11 160.948,153.23L95.926,88.21z M151.825,162.352L86.805,97.333C83.653,94.182 83.653,89.056 86.804,85.905 89.954,82.756 95.079,82.755 98.23,85.905L163.251,150.927C166.403,154.077 166.403,159.203 163.251,162.353 160.101,165.503 154.976,165.503 151.825,162.352z">
+                  <Path.Fill>
+                    <LinearGradientBrush StartPoint="147.146,-125.767" EndPoint="135.72,-114.34" MappingMode="Absolute" Transform="0,1,1,0,245.081,-17.304">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="#FFFFFFFF" Offset="0" />
+                          <GradientStop Color="#FFD6DFE4" Offset="0.3" />
+                          <GradientStop Color="#FFBFC8CD" Offset="1" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Path.Fill>
+                </Path>
+              </Canvas>
+            </Canvas>
+            <Canvas>
+              <Path Data="F1M19.803,198.853L32.337,211.386 115.646,128.081 103.109,115.544 19.803,198.853z" Fill="#FF698381" />
+              <Path Data="F1M103.111,118.206L22.464,198.853 32.337,208.724 112.983,128.079 103.111,118.206z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="254.102,-149.218" EndPoint="254.102,-135.256" MappingMode="Absolute" Transform="0.707,-0.707,0.707,0.707,-11.377,443.717">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFB3BDC3" Offset="0" />
+                        <GradientStop Color="#FFC5D2D4" Offset="0.17" />
+                        <GradientStop Color="#FFD6E6E5" Offset="0.43" />
+                        <GradientStop Color="#FFA3B1AE" Offset="0.61" />
+                        <GradientStop Color="#FF707B76" Offset="0.74" />
+                        <GradientStop Color="#FF818C88" Offset="0.85" />
+                        <GradientStop Color="#FF919D9A" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M12.82,198.382C12.511,198.689,12.255,199.019,12.055,199.36L0.557,216.324C-0.396,217.964,-0.099,220.214,1.243,221.559L9.633,229.946C10.975,231.289,13.225,231.585,14.868,230.634L31.827,219.132C32.168,218.933 32.499,218.678 32.809,218.37 33.781,217.397 34.431,216.027 34.503,214.793L35.409,199.538C35.468,198.509 35.098,197.512 34.388,196.8 33.677,196.09 32.679,195.718 31.649,195.78L16.396,196.684C15.164,196.758,13.792,197.408,12.82,198.382z" Fill="#FF698381" />
+              <Path Data="F1M10.964,228.617C11.697,229.35,13.029,229.524,13.926,229.005L30.884,217.503C31.779,216.984,32.564,215.714,32.624,214.681L33.53,199.427C33.589,198.394,32.795,197.598,31.761,197.657L16.509,198.563C15.473,198.625,14.204,199.408,13.685,200.306L2.186,217.267C1.667,218.162,1.843,219.496,2.575,220.228L10.964,228.617z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="167.897,-142.236" EndPoint="205.075,-142.236" MappingMode="Absolute" Transform="0.707,-0.707,0.707,0.707,-11.377,443.717">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFBFC8CD" Offset="0" />
+                        <GradientStop Color="#FFE3EDF1" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M31.477,217.039C32.103,216.412,32.578,215.477,32.624,214.681L33.53,199.427C33.589,198.394,32.795,197.598,31.761,197.657L16.509,198.563C15.711,198.612 14.776,199.088 14.15,199.713 13.963,199.898 13.803,200.098 13.685,200.306L2.186,217.267C1.667,218.162,1.843,219.496,2.575,220.228L10.964,228.617C11.697,229.35,13.029,229.524,13.926,229.005L30.884,217.503C31.09,217.383,31.291,217.225,31.477,217.039L31.477,217.039z M30.178,215.74C30.077,215.844,30,215.895,29.964,215.913L29.908,215.946 29.853,215.981 12.974,227.431C12.784,227.511,12.399,227.453,12.263,227.318L3.873,218.93C3.737,218.793,3.679,218.406,3.76,218.217L15.206,201.335 15.242,201.281 15.275,201.225C15.296,201.189 15.345,201.114 15.449,201.011 15.804,200.654 16.331,200.415 16.616,200.396L31.685,199.502 30.792,214.571C30.775,214.855,30.535,215.384,30.178,215.74L30.178,215.74">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="158.333,-10.566" EndPoint="189.982,-10.566" MappingMode="Absolute" Transform="0,1,-1,0,7.144,39.321">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFBFC8CD" Offset="0" />
+                        <GradientStop Color="#FFD6DFE4" Offset="0.63" />
+                        <GradientStop Color="#FFFFFFFF" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M162.396,101.771C157.597,102.026 153.449,103.774 150.394,106.828 147.34,109.881 145.591,114.03 145.337,118.828L145.111,123.107 107.366,85.361 111.644,85.135C116.444,84.88 120.591,83.132 123.644,80.079 126.7,77.025 128.446,72.876 128.701,68.077L128.926,63.799 166.672,101.545 162.396,101.771z" Fill="#FFA72D14" />
+              <Path Data="F1M161.627,99.382C150.92,99.95 143.515,107.354 142.948,118.061 132.769,107.881 122.591,97.704 112.412,87.524 123.119,86.956 130.522,79.552 131.089,68.846 141.269,79.025 151.448,89.203 161.627,99.382z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="200.958,-150.915" EndPoint="200.958,-107.728" MappingMode="Absolute" Transform="0.707,-0.707,-0.707,-0.707,-96.522,144.108">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFD41F07" Offset="0" />
+                        <GradientStop Color="#FFF47C20" Offset="0.25" />
+                        <GradientStop Color="#FFFACCA4" Offset="0.5" />
+                        <GradientStop Color="#FFF47C20" Offset="0.75" />
+                        <GradientStop Color="#FFD41F07" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M183.11,8.238L128.715,62.632C124.505,66.842,124.506,73.692,128.714,77.901L153.286,102.473C157.498,106.682,164.347,106.683,168.556,102.473L222.951,48.079C233.934,37.096 233.934,19.223 222.949,8.238 211.965,-2.746 194.093,-2.746 183.11,8.238z" Fill="#FFA72D14" />
+              <Path Data="F1M221.04,10.148C230.988,20.096 230.99,36.223 221.042,46.17 211.093,56.119 194.965,56.119 185.016,46.17 175.069,36.223 175.068,20.096 185.017,10.147 194.965,0.199 211.091,0.2 221.04,10.148z">
+                <Path.Fill>
+                  <RadialGradientBrush Center="293.805,-129.826" RadiusX="25.473" RadiusY="25.473" GradientOrigin="293.805,-129.826" MappingMode="Absolute" Transform="0.707,-0.707,-0.707,-0.707,-96.522,144.108">
+                    <RadialGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFFACCA4" Offset="0" />
+                        <GradientStop Color="#FFF47C20" Offset="0.5" />
+                        <GradientStop Color="#FFD41F07" Offset="1" />
+                      </GradientStopCollection>
+                    </RadialGradientBrush.GradientStops>
+                  </RadialGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M185.017,10.147L130.623,64.541C127.461,67.702,127.461,72.83,130.625,75.992L155.196,100.564C158.359,103.727,163.486,103.727,166.648,100.564L221.042,46.17 185.017,10.147z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="251.294,-155.301" EndPoint="251.294,-104.354" MappingMode="Absolute" Transform="0.707,-0.707,-0.707,-0.707,-96.522,144.108">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFD41F07" Offset="0" />
+                        <GradientStop Color="#FFF47C20" Offset="0.25" />
+                        <GradientStop Color="#FFFACCA4" Offset="0.5" />
+                        <GradientStop Color="#FFF47C20" Offset="0.75" />
+                        <GradientStop Color="#FFD41F07" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M139.136,131.893C136.087,134.942,130.18,133.999,125.971,129.789L101.4,105.217C97.191,101.008,96.248,95.101,99.296,92.052L105.174,86.175C108.223,83.125,114.129,84.069,118.337,88.278L142.911,112.85C147.12,117.061,148.063,122.966,145.012,126.017L139.136,131.893z" Fill="#FFA72D14" />
+              <Path Data="F1M141.527,114.234C144.689,117.396,145.396,121.816,143.104,124.107L137.227,129.984C134.938,132.273,130.517,131.568,127.354,128.405L102.783,103.833C99.622,100.67,98.915,96.251,101.205,93.96L107.082,88.083C109.372,85.792,113.793,86.5,116.955,89.661L141.527,114.234z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="179.43,-155.3" EndPoint="179.43,-104.354" MappingMode="Absolute" Transform="0.707,-0.707,-0.707,-0.707,-96.522,144.108">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFD41F07" Offset="0" />
+                        <GradientStop Color="#FFF47C20" Offset="0.25" />
+                        <GradientStop Color="#FFFFE4CE" Offset="0.5" />
+                        <GradientStop Color="#FFF47C20" Offset="0.75" />
+                        <GradientStop Color="#FFD41F07" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M139.671,114.026L127.147,126.55 104.561,103.964 117.085,91.439 139.671,114.026z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="141.309,-147.273" EndPoint="141.309,-115.332" MappingMode="Absolute" Transform="0.707,-0.707,-0.707,-0.707,-70.648,116.071">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFE85816" Offset="0" />
+                        <GradientStop Color="#FFF47C20" Offset="0.65" />
+                        <GradientStop Color="#FFFACCA4" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M165.224,95.325C161.805,98.744 156.239,98.744 152.818,95.324 149.399,91.904 149.399,86.338 152.818,82.919L205.303,30.433C208.723,27.013 214.291,27.013 217.709,30.433 221.13,33.854 221.13,39.418 217.708,42.839L165.224,95.325z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="256.691,-150.589" EndPoint="256.691,-133.043" MappingMode="Absolute" Transform="0.707,-0.707,-0.707,-0.707,-96.522,144.108">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFFFE6BD" Offset="0" />
+                        <GradientStop Color="#FFFAA786" Offset="0.45" />
+                        <GradientStop Color="#FFEC450F" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M216.754,31.388C219.654,34.287,219.654,38.987,216.754,41.885L164.27,94.371C161.373,97.269,156.671,97.269,153.773,94.369L153.773,94.369C150.875,91.472,150.875,86.772,153.773,83.873L206.258,31.388C209.156,28.49,213.856,28.49,216.754,31.388L216.754,31.388z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="256.691,-149.24" EndPoint="256.691,-134.394" MappingMode="Absolute" Transform="0.707,-0.707,-0.707,-0.707,-96.522,144.108">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFE85816" Offset="0" />
+                        <GradientStop Color="#FFF47C20" Offset="0.65" />
+                        <GradientStop Color="#FFFACCA4" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M148.508,78.608C145.088,82.028 139.521,82.029 136.102,78.608 132.681,75.188 132.681,69.623 136.102,66.202L188.587,13.717C192.007,10.297 197.573,10.297 200.993,13.717 204.414,17.137 204.414,22.703 200.994,26.123L148.508,78.608z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="256.691,-126.948" EndPoint="256.691,-109.403" MappingMode="Absolute" Transform="0.707,-0.707,-0.707,-0.707,-96.522,144.108">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFFFE6BD" Offset="0" />
+                        <GradientStop Color="#FFFAA786" Offset="0.45" />
+                        <GradientStop Color="#FFEC450F" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M200.039,14.671C202.936,17.57,202.936,22.27,200.039,25.168L147.553,77.653C144.656,80.552,139.955,80.552,137.057,77.653L137.057,77.653C134.157,74.754,134.158,70.054,137.057,67.157L189.542,14.671C192.44,11.772,197.14,11.772,200.039,14.671L200.039,14.671z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="256.692,-125.598" EndPoint="256.692,-110.752" MappingMode="Absolute" Transform="0.707,-0.707,-0.707,-0.707,-96.522,144.108">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFE85816" Offset="0" />
+                        <GradientStop Color="#FFF47C20" Offset="0.65" />
+                        <GradientStop Color="#FFFACCA4" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M118.517,133.904L96.569,111.957 102.952,105.575 124.899,127.522 118.517,133.904z" Fill="#FFA72D14" />
+              <Path Data="F1M122.125,127.044L118.037,131.132 99.342,112.435 103.43,108.347 122.125,127.044z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="163.783,-142.541" EndPoint="163.783,-116.101" MappingMode="Absolute" Transform="0.707,-0.707,-0.707,-0.707,-96.522,144.108">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFD41F07" Offset="0" />
+                        <GradientStop Color="#FFF47C20" Offset="0.25" />
+                        <GradientStop Color="#FFFACCA4" Offset="0.5" />
+                        <GradientStop Color="#FFF47C20" Offset="0.75" />
+                        <GradientStop Color="#FFD41F07" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M150.186,138.496L149.828,138.854 150.067,139.093 150.423,138.735 150.186,138.496z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="178.164,-170.82" EndPoint="178.164,-170.482" MappingMode="Absolute" Transform="0.707,-0.707,-0.707,-0.707,-96.522,144.108">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFC5062D" Offset="0" />
+                        <GradientStop Color="#FFEB4E1F" Offset="0.25" />
+                        <GradientStop Color="#FFFDD9CD" Offset="0.5" />
+                        <GradientStop Color="#FFEB4E1F" Offset="0.75" />
+                        <GradientStop Color="#FFC5062D" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M131.592,130.997C133.75,131.639,135.865,131.346,137.227,129.984L143.104,124.107C144.467,122.745,144.762,120.627,144.117,118.472L139.671,114.026 127.147,126.55 131.592,130.997z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="141.309,-156.83" EndPoint="141.309,-147.273" MappingMode="Absolute" Transform="0.707,-0.707,-0.707,-0.707,-70.648,116.071">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFF47C20" Offset="0" />
+                        <GradientStop Color="#FFD41F07" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+              <Path Data="F1M112.718,87.071C110.561,86.427,108.443,86.721,107.082,88.083L101.205,93.96C99.843,95.323,99.549,97.438,100.192,99.596L104.561,103.964 117.085,91.439 112.718,87.071z">
+                <Path.Fill>
+                  <LinearGradientBrush StartPoint="141.309,-115.331" EndPoint="141.309,-105.884" MappingMode="Absolute" Transform="0.707,-0.707,-0.707,-0.707,-70.648,116.071">
+                    <LinearGradientBrush.GradientStops>
+                      <GradientStopCollection>
+                        <GradientStop Color="#FFD41F07" Offset="0" />
+                        <GradientStop Color="#FFF47C20" Offset="1" />
+                      </GradientStopCollection>
+                    </LinearGradientBrush.GradientStops>
+                  </LinearGradientBrush>
+                </Path.Fill>
+              </Path>
+            </Canvas>
+          </Canvas>
+        </Canvas>
+      </Canvas>
+    </Viewbox>
+  </nacs:SymbolViewbox>
+  <nac:Label Text="FIRMUS" TextDecorations="{x:Null}" Background="{x:Null}" Foreground="#FFFFFFFF" FontFamily="宋体" FontSize="32" FontStyle="Italic" FontWeight="Bold" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" Padding="8,0,8,1" Name="Text2" Width="Auto" Height="Auto" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="20" Canvas.Left="893" Canvas.Top="13" />
+  <nac:Label AutoSize="False" WordWrap="True" AutoStretchFont="False" Text="点动操作" TextDecorations="{x:Null}" BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="宋体" FontSize="15" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3.75,0,3.75,1" Name="Text13" Width="100" Height="52" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="21" Canvas.Left="161" Canvas.Top="543">
+    <nac:Label.Resources>
+      <ResourceDictionary>
+        <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+          <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            <nacd2:BrushCFIntervalMapper>
+              <nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalList>
+                  <nacd2:BrushCFInterval Start="2" End="2">
+                    <nacd2:BrushCFInterval.Value>
+                      <nacgl:BrushCF StartColor="75, 172, 198" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFInterval.Value>
+                  </nacd2:BrushCFInterval>
+                </nacd2:BrushCFIntervalList>
+              </nacd2:BrushCFIntervalMapper.Intervals>
+              <nacd2:BrushCFIntervalMapper.DefaultValue>
+                <nacgl:BrushCF StartColor="48, 73, 104" EndColor="" FillDirection="None" />
+              </nacd2:BrushCFIntervalMapper.DefaultValue>
+            </nacd2:BrushCFIntervalMapper>
+          </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+        </nacd1:BrushDynamicsConverter>
+      </ResourceDictionary>
+    </nac:Label.Resources>
+    <nac:Label.Background>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.ScreenTouchId].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>
+          <SolidColorBrush>#FF304968</SolidColorBrush>
+        </Binding.FallbackValue>
+      </Binding>
+    </nac:Label.Background>
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:MultiAction Name="Multi Action">
+          <nata:MultiAction.Actions>
+            <nai:ActionList>
+              <nata:Action Name="Show Screen">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="Show" ObjectName="点动操作" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+              <nata:Action Name="Set Analog">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.ScreenTouchId" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.47.473.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                          <nata:ActionParameterInfo.Value>
+                            <s:Int16>2</s:Int16>
+                          </nata:ActionParameterInfo.Value>
+                        </nata:ActionParameterInfo>
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+            </nai:ActionList>
+          </nata:MultiAction.Actions>
+          <nata:MultiAction.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="" ObjectName="" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:MultiAction.ActionMethodInfo>
+        </nata:MultiAction>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+  </nac:Label>
+  <nac:Label AutoSize="False" WordWrap="True" AutoStretchFont="False" Text="手动定位" TextDecorations="{x:Null}" BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="宋体" FontSize="15" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3.75,0,3.75,1" Name="Text1" Width="100" Height="52" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="22" Canvas.Left="269" Canvas.Top="543">
+    <nac:Label.Resources>
+      <ResourceDictionary>
+        <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+          <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            <nacd2:BrushCFIntervalMapper>
+              <nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalList>
+                  <nacd2:BrushCFInterval Start="3" End="3">
+                    <nacd2:BrushCFInterval.Value>
+                      <nacgl:BrushCF StartColor="75, 172, 198" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFInterval.Value>
+                  </nacd2:BrushCFInterval>
+                </nacd2:BrushCFIntervalList>
+              </nacd2:BrushCFIntervalMapper.Intervals>
+              <nacd2:BrushCFIntervalMapper.DefaultValue>
+                <nacgl:BrushCF StartColor="48, 73, 104" EndColor="" FillDirection="None" />
+              </nacd2:BrushCFIntervalMapper.DefaultValue>
+            </nacd2:BrushCFIntervalMapper>
+          </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+        </nacd1:BrushDynamicsConverter>
+      </ResourceDictionary>
+    </nac:Label.Resources>
+    <nac:Label.Background>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.ScreenTouchId].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>
+          <SolidColorBrush>#FF304968</SolidColorBrush>
+        </Binding.FallbackValue>
+      </Binding>
+    </nac:Label.Background>
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:MultiAction Name="Multi Action">
+          <nata:MultiAction.Actions>
+            <nai:ActionList>
+              <nata:Action Name="Show Screen">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="Show" ObjectName="手动定位" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+              <nata:Action Name="Set Analog">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.ScreenTouchId" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.47.473.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                          <nata:ActionParameterInfo.Value>
+                            <s:Int16>3</s:Int16>
+                          </nata:ActionParameterInfo.Value>
+                        </nata:ActionParameterInfo>
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+            </nai:ActionList>
+          </nata:MultiAction.Actions>
+          <nata:MultiAction.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="" ObjectName="" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:MultiAction.ActionMethodInfo>
+        </nata:MultiAction>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+  </nac:Label>
+  <nac:Label AutoSize="False" WordWrap="True" AutoStretchFont="False" Text="本地自动" TextDecorations="{x:Null}" BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="宋体" FontSize="15" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3.75,0,3.75,1" Name="Text10" Width="100" Height="52" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="23" Canvas.Left="377" Canvas.Top="543">
+    <nac:Label.Resources>
+      <ResourceDictionary>
+        <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+          <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            <nacd2:BrushCFIntervalMapper>
+              <nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalList>
+                  <nacd2:BrushCFInterval Start="4" End="4">
+                    <nacd2:BrushCFInterval.Value>
+                      <nacgl:BrushCF StartColor="75, 172, 198" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFInterval.Value>
+                  </nacd2:BrushCFInterval>
+                </nacd2:BrushCFIntervalList>
+              </nacd2:BrushCFIntervalMapper.Intervals>
+              <nacd2:BrushCFIntervalMapper.DefaultValue>
+                <nacgl:BrushCF StartColor="48, 73, 104" EndColor="" FillDirection="None" />
+              </nacd2:BrushCFIntervalMapper.DefaultValue>
+            </nacd2:BrushCFIntervalMapper>
+          </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+        </nacd1:BrushDynamicsConverter>
+      </ResourceDictionary>
+    </nac:Label.Resources>
+    <nac:Label.Background>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.ScreenTouchId].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>
+          <SolidColorBrush>#FF304968</SolidColorBrush>
+        </Binding.FallbackValue>
+      </Binding>
+    </nac:Label.Background>
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:MultiAction Name="Multi Action">
+          <nata:MultiAction.Actions>
+            <nai:ActionList>
+              <nata:Action Name="Show Screen">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="Show" ObjectName="自动运行" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" ObjectPath="" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+              <nata:Action Name="Set Analog">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.ScreenTouchId" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.47.473.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                          <nata:ActionParameterInfo.Value>
+                            <s:Int16>4</s:Int16>
+                          </nata:ActionParameterInfo.Value>
+                        </nata:ActionParameterInfo>
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+            </nai:ActionList>
+          </nata:MultiAction.Actions>
+          <nata:MultiAction.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="" ObjectName="" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:MultiAction.ActionMethodInfo>
+        </nata:MultiAction>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+  </nac:Label>
+  <nac:Label AutoSize="False" WordWrap="True" AutoStretchFont="False" Text="运转监控" TextDecorations="{x:Null}" BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="宋体" FontSize="15" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3.75,0,3.75,1" Name="Text14" Width="100" Height="52" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="24" Canvas.Left="485" Canvas.Top="543">
+    <nac:Label.Resources>
+      <ResourceDictionary>
+        <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+          <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            <nacd2:BrushCFIntervalMapper>
+              <nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalList>
+                  <nacd2:BrushCFInterval Start="5" End="5">
+                    <nacd2:BrushCFInterval.Value>
+                      <nacgl:BrushCF StartColor="75, 172, 198" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFInterval.Value>
+                  </nacd2:BrushCFInterval>
+                </nacd2:BrushCFIntervalList>
+              </nacd2:BrushCFIntervalMapper.Intervals>
+              <nacd2:BrushCFIntervalMapper.DefaultValue>
+                <nacgl:BrushCF StartColor="48, 73, 104" EndColor="" FillDirection="None" />
+              </nacd2:BrushCFIntervalMapper.DefaultValue>
+            </nacd2:BrushCFIntervalMapper>
+          </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+        </nacd1:BrushDynamicsConverter>
+      </ResourceDictionary>
+    </nac:Label.Resources>
+    <nac:Label.Background>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.ScreenTouchId].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>
+          <SolidColorBrush>#FF304968</SolidColorBrush>
+        </Binding.FallbackValue>
+      </Binding>
+    </nac:Label.Background>
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:MultiAction Name="Multi Action">
+          <nata:MultiAction.Actions>
+            <nai:ActionList>
+              <nata:Action Name="Show Screen">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="Show" ObjectName="运转监控" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" ObjectPath="" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+              <nata:Action Name="Set Analog">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.ScreenTouchId" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.47.473.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                          <nata:ActionParameterInfo.Value>
+                            <s:Int16>5</s:Int16>
+                          </nata:ActionParameterInfo.Value>
+                        </nata:ActionParameterInfo>
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+            </nai:ActionList>
+          </nata:MultiAction.Actions>
+          <nata:MultiAction.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="" ObjectName="" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:MultiAction.ActionMethodInfo>
+        </nata:MultiAction>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+  </nac:Label>
+  <nac:Label AutoSize="False" WordWrap="True" AutoStretchFont="False" Text="报警历史" TextDecorations="{x:Null}" BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="宋体" FontSize="15" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3.75,0,3.75,1" Name="Text15" Width="100" Height="52" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="25" Canvas.Left="593" Canvas.Top="543">
+    <nac:Label.Resources>
+      <ResourceDictionary>
+        <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+          <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            <nacd2:BrushCFIntervalMapper>
+              <nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalList>
+                  <nacd2:BrushCFInterval Start="6" End="6">
+                    <nacd2:BrushCFInterval.Value>
+                      <nacgl:BrushCF StartColor="75, 172, 198" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFInterval.Value>
+                  </nacd2:BrushCFInterval>
+                </nacd2:BrushCFIntervalList>
+              </nacd2:BrushCFIntervalMapper.Intervals>
+              <nacd2:BrushCFIntervalMapper.DefaultValue>
+                <nacgl:BrushCF StartColor="48, 73, 104" EndColor="" FillDirection="None" />
+              </nacd2:BrushCFIntervalMapper.DefaultValue>
+            </nacd2:BrushCFIntervalMapper>
+          </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+        </nacd1:BrushDynamicsConverter>
+      </ResourceDictionary>
+    </nac:Label.Resources>
+    <nac:Label.Background>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.ScreenTouchId].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>
+          <SolidColorBrush>#FF304968</SolidColorBrush>
+        </Binding.FallbackValue>
+      </Binding>
+    </nac:Label.Background>
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:MultiAction Name="Multi Action">
+          <nata:MultiAction.Actions>
+            <nai:ActionList>
+              <nata:Action Name="Show Screen">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="Show" ObjectName="报警历史" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+              <nata:Action Name="Set Analog">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.ScreenTouchId" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.47.473.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                          <nata:ActionParameterInfo.Value>
+                            <s:Int16>6</s:Int16>
+                          </nata:ActionParameterInfo.Value>
+                        </nata:ActionParameterInfo>
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+            </nai:ActionList>
+          </nata:MultiAction.Actions>
+          <nata:MultiAction.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="" ObjectName="" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:MultiAction.ActionMethodInfo>
+        </nata:MultiAction>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+  </nac:Label>
+  <nac:Label AutoSize="False" WordWrap="True" AutoStretchFont="False" Text="参数设定" TextDecorations="{x:Null}" BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="宋体" FontSize="15" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3.75,0,3.75,1" Name="Text16" Width="100" Height="52" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="26" Canvas.Left="700" Canvas.Top="543">
+    <nac:Label.Resources>
+      <ResourceDictionary>
+        <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+          <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            <nacd2:BrushCFIntervalMapper>
+              <nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalList>
+                  <nacd2:BrushCFInterval Start="7" End="7">
+                    <nacd2:BrushCFInterval.Value>
+                      <nacgl:BrushCF StartColor="75, 172, 198" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFInterval.Value>
+                  </nacd2:BrushCFInterval>
+                </nacd2:BrushCFIntervalList>
+              </nacd2:BrushCFIntervalMapper.Intervals>
+              <nacd2:BrushCFIntervalMapper.DefaultValue>
+                <nacgl:BrushCF StartColor="48, 73, 104" EndColor="" FillDirection="None" />
+              </nacd2:BrushCFIntervalMapper.DefaultValue>
+            </nacd2:BrushCFIntervalMapper>
+          </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+        </nacd1:BrushDynamicsConverter>
+      </ResourceDictionary>
+    </nac:Label.Resources>
+    <nac:Label.Background>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.ScreenTouchId].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>
+          <SolidColorBrush>#FF304968</SolidColorBrush>
+        </Binding.FallbackValue>
+      </Binding>
+    </nac:Label.Background>
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:MultiAction Name="Multi Action">
+          <nata:MultiAction.Actions>
+            <nai:ActionList>
+              <nata:Action Name="Show Screen">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="Show" ObjectName="参数设定" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+              <nata:Action Name="Set Analog">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.ScreenTouchId" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.47.473.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                          <nata:ActionParameterInfo.Value>
+                            <s:Int16>7</s:Int16>
+                          </nata:ActionParameterInfo.Value>
+                        </nata:ActionParameterInfo>
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+            </nai:ActionList>
+          </nata:MultiAction.Actions>
+          <nata:MultiAction.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="" ObjectName="" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:MultiAction.ActionMethodInfo>
+        </nata:MultiAction>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+  </nac:Label>
+  <nac:Label AutoSize="False" WordWrap="True" AutoStretchFont="False" Text="设备信息" TextDecorations="{x:Null}" BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="宋体" FontSize="15" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3.75,0,3.75,1" Name="Text17" Width="100" Height="52" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="27" Canvas.Left="808" Canvas.Top="543">
+    <nac:Label.Resources>
+      <ResourceDictionary>
+        <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+          <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            <nacd2:BrushCFIntervalMapper>
+              <nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalList>
+                  <nacd2:BrushCFInterval Start="8" End="8">
+                    <nacd2:BrushCFInterval.Value>
+                      <nacgl:BrushCF StartColor="75, 172, 198" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFInterval.Value>
+                  </nacd2:BrushCFInterval>
+                </nacd2:BrushCFIntervalList>
+              </nacd2:BrushCFIntervalMapper.Intervals>
+              <nacd2:BrushCFIntervalMapper.DefaultValue>
+                <nacgl:BrushCF StartColor="48, 73, 104" EndColor="" FillDirection="None" />
+              </nacd2:BrushCFIntervalMapper.DefaultValue>
+            </nacd2:BrushCFIntervalMapper>
+          </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+        </nacd1:BrushDynamicsConverter>
+      </ResourceDictionary>
+    </nac:Label.Resources>
+    <nac:Label.Background>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.ScreenTouchId].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>
+          <SolidColorBrush>#FF304968</SolidColorBrush>
+        </Binding.FallbackValue>
+      </Binding>
+    </nac:Label.Background>
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:MultiAction Name="Multi Action">
+          <nata:MultiAction.Actions>
+            <nai:ActionList>
+              <nata:Action Name="Show Screen">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="Show" ObjectName="项目信息" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" ObjectPath="" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+              <nata:Action Name="Set Analog">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.ScreenTouchId" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.47.473.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                          <nata:ActionParameterInfo.Value>
+                            <s:Int16>8</s:Int16>
+                          </nata:ActionParameterInfo.Value>
+                        </nata:ActionParameterInfo>
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+            </nai:ActionList>
+          </nata:MultiAction.Actions>
+          <nata:MultiAction.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="" ObjectName="" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:MultiAction.ActionMethodInfo>
+        </nata:MultiAction>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+  </nac:Label>
+  <nac:Label AutoSize="False" WordWrap="True" AutoStretchFont="False" Text="IO监控" TextDecorations="{x:Null}" BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="宋体" FontSize="15" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3.75,0,3.75,1" Name="Text18" Width="100" Height="52" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="28" Canvas.Left="916" Canvas.Top="543">
+    <nac:Label.Resources>
+      <ResourceDictionary>
+        <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+          <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            <nacd2:BrushCFIntervalMapper>
+              <nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalList>
+                  <nacd2:BrushCFInterval Start="9" End="9">
+                    <nacd2:BrushCFInterval.Value>
+                      <nacgl:BrushCF StartColor="75, 172, 198" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFInterval.Value>
+                  </nacd2:BrushCFInterval>
+                </nacd2:BrushCFIntervalList>
+              </nacd2:BrushCFIntervalMapper.Intervals>
+              <nacd2:BrushCFIntervalMapper.DefaultValue>
+                <nacgl:BrushCF StartColor="48, 73, 104" EndColor="" FillDirection="None" />
+              </nacd2:BrushCFIntervalMapper.DefaultValue>
+            </nacd2:BrushCFIntervalMapper>
+          </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+        </nacd1:BrushDynamicsConverter>
+      </ResourceDictionary>
+    </nac:Label.Resources>
+    <nac:Label.Background>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.ScreenTouchId].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>
+          <SolidColorBrush>#FF304968</SolidColorBrush>
+        </Binding.FallbackValue>
+      </Binding>
+    </nac:Label.Background>
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:MultiAction Name="Multi Action">
+          <nata:MultiAction.Actions>
+            <nai:ActionList>
+              <nata:Action Name="Show Screen">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="Show" ObjectName="IN1" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+              <nata:Action Name="Set Analog">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.ScreenTouchId" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.47.473.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                          <nata:ActionParameterInfo.Value>
+                            <s:Int16>9</s:Int16>
+                          </nata:ActionParameterInfo.Value>
+                        </nata:ActionParameterInfo>
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+            </nai:ActionList>
+          </nata:MultiAction.Actions>
+          <nata:MultiAction.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="" ObjectName="" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:MultiAction.ActionMethodInfo>
+        </nata:MultiAction>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+  </nac:Label>
+  <nac:Label AutoSize="False" WordWrap="True" AutoStretchFont="False" Text="主画面" TextDecorations="{x:Null}" BorderBrush="#FFFFFFFF" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="宋体" FontSize="15" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="3.75,0,3.75,1" Name="Text19" Width="100" Height="52" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="29" Canvas.Left="54" Canvas.Top="543">
+    <nac:Label.Resources>
+      <ResourceDictionary>
+        <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+          <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            <nacd2:BrushCFIntervalMapper>
+              <nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalList>
+                  <nacd2:BrushCFInterval Start="1" End="1">
+                    <nacd2:BrushCFInterval.Value>
+                      <nacgl:BrushCF StartColor="75, 172, 198" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFInterval.Value>
+                  </nacd2:BrushCFInterval>
+                </nacd2:BrushCFIntervalList>
+              </nacd2:BrushCFIntervalMapper.Intervals>
+              <nacd2:BrushCFIntervalMapper.DefaultValue>
+                <nacgl:BrushCF StartColor="48, 73, 104" EndColor="" FillDirection="None" />
+              </nacd2:BrushCFIntervalMapper.DefaultValue>
+            </nacd2:BrushCFIntervalMapper>
+          </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+        </nacd1:BrushDynamicsConverter>
+      </ResourceDictionary>
+    </nac:Label.Resources>
+    <nac:Label.Background>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.ScreenTouchId].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>
+          <SolidColorBrush>#FF304968</SolidColorBrush>
+        </Binding.FallbackValue>
+      </Binding>
+    </nac:Label.Background>
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:MultiAction Name="Multi Action">
+          <nata:MultiAction.Actions>
+            <nai:ActionList>
+              <nata:Action Name="Show Screen">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="Show" ObjectName="起始画面" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="Neo.ApplicationFramework.Tools.Action.ScreenInstanceObjectPathProvider, ToolsIde, Version=2.44.53.0, Culture=neutral, PublicKeyToken=null" ObjectPath="Default" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" Value="{x:Null}" ParameterName="position" ParameterTypeString="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" TagName="" />
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+              <nata:Action Name="Set Analog">
+                <nata:Action.ActionMethodInfo>
+                  <nata:ActionMethodInfo Name="SetAnalog" ObjectName="Tags.ScreenTouchId" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                    <nata:ActionMethodInfo.ActionParameterInfo>
+                      <nai:ActionParameterInfoList>
+                        <nata:ActionParameterInfo Position="0" ParameterName="newValue" ParameterTypeString="Neo.ApplicationFramework.Interfaces.VariantValue, InterfacesCF, Version=2.47.473.0, Culture=neutral, PublicKeyToken=null" TagName="">
+                          <nata:ActionParameterInfo.Value>
+                            <s:Int32>1</s:Int32>
+                          </nata:ActionParameterInfo.Value>
+                        </nata:ActionParameterInfo>
+                      </nai:ActionParameterInfoList>
+                    </nata:ActionMethodInfo.ActionParameterInfo>
+                  </nata:ActionMethodInfo>
+                </nata:Action.ActionMethodInfo>
+              </nata:Action>
+            </nai:ActionList>
+          </nata:MultiAction.Actions>
+          <nata:MultiAction.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="" ObjectName="" EventName="MouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:MultiAction.ActionMethodInfo>
+        </nata:MultiAction>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+  </nac:Label>
+  <nac:AnalogNumericFX AutoStretchFont="False" MaxValue="11" ValidateValueOnInput="True" ValidateValueOnDisplay="True" Prefix="编号: " VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="宋体" UndoLimit="1" Transparent="Visible" TextDecorations="{x:Null}" IsReadOnly="True" BorderBrush="#FF7F9DB9" BorderThickness="1,1,1,1" Background="#FF000000" Foreground="#FFFFFFFF" FontSize="22" FontStyle="Normal" FontWeight="Normal" Padding="2,2,2,2" Name="AnalogNumeric" Width="133" Height="53" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Focusable="False" Panel.ZIndex="30" KeyboardNavigation.TabNavigation="None" Canvas.Left="870" Canvas.Top="468">
+    <nac:AnalogNumericFX.Resources>
+      <ResourceDictionary>
+        <nacc1:VariantValueConverter x:Key="ValueConverter" />
+      </ResourceDictionary>
+    </nac:AnalogNumericFX.Resources>
+    <nac:AnalogNumericFX.Value>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.堆垛机编号].Value" Converter="{StaticResource ValueConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>0</Binding.FallbackValue>
+      </Binding>
+    </nac:AnalogNumericFX.Value>
+    <nac:AnalogNumericFX.BevelEffectInfo>
+      <nacb:BevelEffectInfo Style="Sunken" Width="2" />
+    </nac:AnalogNumericFX.BevelEffectInfo>
+  </nac:AnalogNumericFX>
+  <nac:Button Text="点动模式" TextDecorations="{x:Null}" RequiresTransparency="True" SymbolTransparent="False" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="黑体" FontSize="12" FontStyle="Normal" FontWeight="Normal" Name="Button" Width="130" Height="43" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="31" Canvas.Left="870" Canvas.Top="83" Style="{nac1:StyleMarkupExtension DefaultCF}">
+    <nac:Button.Resources>
+      <ResourceDictionary>
+        <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+          <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            <nacd2:BrushCFIntervalMapper>
+              <nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalList>
+                  <nacd2:BrushCFInterval Start="1" End="2">
+                    <nacd2:BrushCFInterval.Value>
+                      <nacgl:BrushCF StartColor="34, 177, 76" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFInterval.Value>
+                  </nacd2:BrushCFInterval>
+                </nacd2:BrushCFIntervalList>
+              </nacd2:BrushCFIntervalMapper.Intervals>
+              <nacd2:BrushCFIntervalMapper.DefaultValue>
+                <nacgl:BrushCF StartColor="75, 172, 198" EndColor="" FillDirection="None" />
+              </nacd2:BrushCFIntervalMapper.DefaultValue>
+            </nacd2:BrushCFIntervalMapper>
+          </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+        </nacd1:BrushDynamicsConverter>
+      </ResourceDictionary>
+    </nac:Button.Resources>
+    <nac:Button.Background>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemMode].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>
+          <SolidColorBrush>#FF4BACC6</SolidColorBrush>
+        </Binding.FallbackValue>
+      </Binding>
+    </nac:Button.Background>
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:Action Name="Set Tag">
+          <nata:Action.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.P_Jog_Mode" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:Action.ActionMethodInfo>
+        </nata:Action>
+        <nata:Action Name="Reset Tag">
+          <nata:Action.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.P_Jog_Mode" EventName="PreviewMouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:Action.ActionMethodInfo>
+        </nata:Action>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+  </nac:Button>
+  <nac:Button Text="手动定位模式" TextDecorations="{x:Null}" RequiresTransparency="True" SymbolTransparent="False" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="黑体" FontSize="12" FontStyle="Normal" FontWeight="Normal" Name="Button1" Width="130" Height="43" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="32" Canvas.Left="870" Canvas.Top="134" Style="{nac1:StyleMarkupExtension DefaultCF}">
+    <nac:Button.Resources>
+      <ResourceDictionary>
+        <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+          <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            <nacd2:BrushCFIntervalMapper>
+              <nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalList>
+                  <nacd2:BrushCFInterval Start="3" End="3">
+                    <nacd2:BrushCFInterval.Value>
+                      <nacgl:BrushCF StartColor="34, 177, 76" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFInterval.Value>
+                  </nacd2:BrushCFInterval>
+                </nacd2:BrushCFIntervalList>
+              </nacd2:BrushCFIntervalMapper.Intervals>
+              <nacd2:BrushCFIntervalMapper.DefaultValue>
+                <nacgl:BrushCF StartColor="75, 172, 198" EndColor="" FillDirection="None" />
+              </nacd2:BrushCFIntervalMapper.DefaultValue>
+            </nacd2:BrushCFIntervalMapper>
+          </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+        </nacd1:BrushDynamicsConverter>
+      </ResourceDictionary>
+    </nac:Button.Resources>
+    <nac:Button.Background>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemMode].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>
+          <SolidColorBrush>#FF4BACC6</SolidColorBrush>
+        </Binding.FallbackValue>
+      </Binding>
+    </nac:Button.Background>
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:Action Name="Set Tag">
+          <nata:Action.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.P_Manual_Mode" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:Action.ActionMethodInfo>
+        </nata:Action>
+        <nata:Action Name="Reset Tag">
+          <nata:Action.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.P_Manual_Mode" EventName="PreviewMouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:Action.ActionMethodInfo>
+        </nata:Action>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+  </nac:Button>
+  <nac:Button Text="本地自动模式" TextDecorations="{x:Null}" RequiresTransparency="True" SymbolTransparent="False" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="黑体" FontSize="12" FontStyle="Normal" FontWeight="Normal" Name="Button2" Width="130" Height="43" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="33" Canvas.Left="870" Canvas.Top="185" Style="{nac1:StyleMarkupExtension DefaultCF}">
+    <nac:Button.Resources>
+      <ResourceDictionary>
+        <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+          <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            <nacd2:BrushCFIntervalMapper>
+              <nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalList>
+                  <nacd2:BrushCFInterval Start="4" End="4">
+                    <nacd2:BrushCFInterval.Value>
+                      <nacgl:BrushCF StartColor="34, 177, 76" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFInterval.Value>
+                  </nacd2:BrushCFInterval>
+                </nacd2:BrushCFIntervalList>
+              </nacd2:BrushCFIntervalMapper.Intervals>
+              <nacd2:BrushCFIntervalMapper.DefaultValue>
+                <nacgl:BrushCF StartColor="75, 172, 198" EndColor="" FillDirection="None" />
+              </nacd2:BrushCFIntervalMapper.DefaultValue>
+            </nacd2:BrushCFIntervalMapper>
+          </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+        </nacd1:BrushDynamicsConverter>
+      </ResourceDictionary>
+    </nac:Button.Resources>
+    <nac:Button.Background>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemMode].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>
+          <SolidColorBrush>#FF4BACC6</SolidColorBrush>
+        </Binding.FallbackValue>
+      </Binding>
+    </nac:Button.Background>
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:Action Name="Set Tag">
+          <nata:Action.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.P_LocalAuto_Mode" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:Action.ActionMethodInfo>
+        </nata:Action>
+        <nata:Action Name="Reset Tag">
+          <nata:Action.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.P_LocalAuto_Mode" EventName="PreviewMouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:Action.ActionMethodInfo>
+        </nata:Action>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+  </nac:Button>
+  <nac:Button Text="远程自动模式" TextDecorations="{x:Null}" RequiresTransparency="True" SymbolTransparent="False" BorderBrush="{x:Null}" BorderThickness="1,1,1,1" Foreground="#FFFFFFFF" FontFamily="黑体" FontSize="12" FontStyle="Normal" FontWeight="Normal" Name="Button3" Width="130" Height="43" HorizontalAlignment="Center" VerticalAlignment="Center" FocusVisualStyle="{x:Null}" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="34" Canvas.Left="870" Canvas.Top="236" Style="{nac1:StyleMarkupExtension DefaultCF}">
+    <nac:Button.Resources>
+      <ResourceDictionary>
+        <nacd1:BrushDynamicsConverter x:Key="BackgroundConverter">
+          <nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+            <nacd2:BrushCFIntervalMapper>
+              <nacd2:BrushCFIntervalMapper.Intervals>
+                <nacd2:BrushCFIntervalList>
+                  <nacd2:BrushCFInterval Start="5" End="5">
+                    <nacd2:BrushCFInterval.Value>
+                      <nacgl:BrushCF StartColor="34, 177, 76" EndColor="" FillDirection="None" />
+                    </nacd2:BrushCFInterval.Value>
+                  </nacd2:BrushCFInterval>
+                </nacd2:BrushCFIntervalList>
+              </nacd2:BrushCFIntervalMapper.Intervals>
+              <nacd2:BrushCFIntervalMapper.DefaultValue>
+                <nacgl:BrushCF StartColor="75, 172, 198" EndColor="" FillDirection="None" />
+              </nacd2:BrushCFIntervalMapper.DefaultValue>
+            </nacd2:BrushCFIntervalMapper>
+          </nacd1:BrushDynamicsConverter.BrushIntervalMapper>
+        </nacd1:BrushDynamicsConverter>
+      </ResourceDictionary>
+    </nac:Button.Resources>
+    <nac:Button.Background>
+      <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.SystemMode].Value" Converter="{StaticResource BackgroundConverter}" ValidatesOnExceptions="True">
+        <Binding.FallbackValue>
+          <SolidColorBrush>#FF4BACC6</SolidColorBrush>
+        </Binding.FallbackValue>
+      </Binding>
+    </nac:Button.Background>
+    <nai:ActionProperties.Actions>
+      <nai:ActionList>
+        <nata:Action Name="Set Tag">
+          <nata:Action.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.P_RemoteAuto_Mode" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:Action.ActionMethodInfo>
+        </nata:Action>
+        <nata:Action Name="Reset Tag">
+          <nata:Action.ActionMethodInfo>
+            <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.P_RemoteAuto_Mode" EventName="PreviewMouseUp" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+          </nata:Action.ActionMethodInfo>
+        </nata:Action>
+      </nai:ActionList>
+    </nai:ActionProperties.Actions>
+  </nac:Button>
+  <nac:Group Name="Group" Width="50" Height="50" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="35" Canvas.Left="1" Canvas.Top="544">
+    <nacs:SymbolViewbox RequiresTransparency="True" ForceTransparency="False" Name="SymbolViewbox4" Width="50" Height="50" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="8" Canvas.Left="0" Canvas.Top="0">
+      <nacs:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="0" />
+        </ResourceDictionary>
+      </nacs:SymbolViewbox.Resources>
+      <nacb1:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.语言切换].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb1:BlinkProperties.VisibleDynamicsValue>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:MultiAction Name="Multi Action">
+            <nata:MultiAction.Actions>
+              <nai:ActionList>
+                <nata:Action Name="Set Language">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="SetLanguage" ObjectName="MultipleLanguages" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                      <nata:ActionMethodInfo.ActionParameterInfo>
+                        <nai:ActionParameterInfoList>
+                          <nata:ActionParameterInfo Position="0" Value="1 English (United States)" ParameterName="languageName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                        </nai:ActionParameterInfoList>
+                      </nata:ActionMethodInfo.ActionParameterInfo>
+                    </nata:ActionMethodInfo>
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+                <nata:Action Name="Set Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="SetTag" ObjectName="Tags.语言切换" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+              </nai:ActionList>
+            </nata:MultiAction.Actions>
+            <nata:MultiAction.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="" ObjectName="" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:MultiAction.ActionMethodInfo>
+          </nata:MultiAction>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+      <Canvas Width="288" Height="288">
+        <nacc:Ellipse Stretch="Fill" Width="288" Height="288" Canvas.Left="0" Canvas.Top="0">
+          <nacc:Ellipse.Fill>
+            <RadialGradientBrush Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5" GradientOrigin="0.5,0.5">
+              <RadialGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FF000000" Offset="0.872881" />
+                  <GradientStop Color="#FF9A9A9A" Offset="0.961864" />
+                  <GradientStop Color="#FF000000" Offset="1" />
+                </GradientStopCollection>
+              </RadialGradientBrush.GradientStops>
+              <RadialGradientBrush.RelativeTransform>
+                <TransformGroup />
+              </RadialGradientBrush.RelativeTransform>
+            </RadialGradientBrush>
+          </nacc:Ellipse.Fill>
+        </nacc:Ellipse>
+        <nacc:Ellipse Stretch="Fill" Fill="#FFF50000" Width="256" Height="256" Canvas.Left="15.9202" Canvas.Top="15.2746" />
+        <Path Data="F1M211.92,34.811C192.218,22.4331 168.905,15.2746 143.92,15.2746 118.935,15.2746 95.6222,22.4331 75.9203,34.8111L75.9203,251.738C95.6222,264.116 118.935,271.275 143.92,271.275 168.905,271.275 192.218,264.116 211.92,251.738L211.92,34.811z" Stretch="Fill" Fill="#FFFFFFFF" Width="136" Height="256" Canvas.Left="75.9203" Canvas.Top="15.2746" />
+        <Path Data="F1M144.117,77.0669L143.883,77.0662 133.045,97.9439C132.589,98.6184 131.818,99.0618 130.942,99.0618 130.537,99.0618 130.153,98.9665 129.813,98.797L120.899,93.8593 126.711,127.125C126.7,127.126 126.717,127.282 126.717,127.443 126.717,128.728 125.675,129.77 124.39,129.77 123.77,129.77 123.206,129.527 122.789,129.132L108.776,113.01 106.537,121.011C106.267,121.866 105.363,122.559 104.298,122.559 104.132,122.559 103.97,122.542 103.814,122.51L87.3077,118.904 92.3562,138.929C92.4174,138.931 92.4334,139.084 92.4334,139.242 92.4334,140.144 91.9107,140.923 91.1518,141.294L84.8499,144.328 114.111,169.682C114.475,170.102 114.67,170.608 114.67,171.16 114.67,171.364 114.643,171.562 114.593,171.751L112.004,181.075 140.113,177.892C140.284,177.862 140.384,177.855 140.486,177.855 141.746,177.855 142.769,178.877 142.769,180.138 142.769,180.248 142.761,180.357 142.746,180.463L141.496,210.864 146.474,210.934 145.255,180.463C145.24,180.357 145.232,180.248 145.232,180.138 145.232,178.877 146.254,177.855 147.515,177.855 147.616,177.855 147.716,177.862 147.887,177.892L175.996,181.075 173.407,171.751C173.357,171.562 173.33,171.364 173.33,171.16 173.33,170.608 173.526,170.102 173.889,169.682L203.15,144.328 196.849,141.294C196.09,140.923 195.567,140.144 195.567,139.242 195.567,139.084 195.583,138.931 195.644,138.929L200.693,118.904 184.186,122.51C184.03,122.542 183.868,122.559 183.702,122.559 182.637,122.559 181.734,121.866 181.463,121.011L179.224,113.01 165.211,129.132C164.794,129.527 164.231,129.77 163.611,129.77 162.326,129.77 161.284,128.728 161.284,127.443 161.284,127.282 161.3,127.126 161.289,127.125L167.101,93.8593 158.187,98.797C157.847,98.9665 157.464,99.0618 157.058,99.0618 156.183,99.0618 155.411,98.6184 154.956,97.9439L144.117,77.0669z" Stretch="Fill" Fill="#FFF50000" Width="118.3" Height="133.868" Canvas.Left="84.8499" Canvas.Top="77.0662" />
+        <nacc:Ellipse Stretch="Fill" Width="256" Height="256" Canvas.Left="16" Canvas.Top="16">
+          <nacc:Ellipse.Fill>
+            <LinearGradientBrush StartPoint="0.500874,0.000662804" EndPoint="0.500874,1.00066">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#00000000" Offset="0" />
+                  <GradientStop Color="#40000000" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nacc:Ellipse.Fill>
+        </nacc:Ellipse>
+        <Path Data="F1M247.993,160L239.962,160C208,160 176,144 144,144 112,144 80,160 48.0738,160L39.9931,160C31.1565,160 23.9931,152.837 23.9931,144 23.9931,77.7258 77.7189,24 143.993,24 210.267,24 263.993,77.7258 263.993,144 263.993,152.837 256.83,160 247.993,160z" Stretch="Fill" Width="240" Height="136" Canvas.Left="23.9931" Canvas.Top="24">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.499956,-0.000664206" EndPoint="0.499956,0.999336">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#CCFFFFFF" Offset="0" />
+                  <GradientStop Color="#40FFFFFF" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+      </Canvas>
+    </nacs:SymbolViewbox>
+    <nacs:SymbolViewbox RequiresTransparency="False" ForceTransparency="False" Name="SymbolViewbox3" Width="50" Height="50" RenderTransform="Identity" RenderTransformOrigin="0.5,0.5" Visibility="Visible" Panel.ZIndex="7" Canvas.Left="0" Canvas.Top="0">
+      <nacs:SymbolViewbox.Resources>
+        <ResourceDictionary>
+          <nacd1:BoolDynamicsConverter x:Key="VisibleDynamicsValueConverter" DefaultValue="True" TrueValue="1" />
+        </ResourceDictionary>
+      </nacs:SymbolViewbox.Resources>
+      <nacb1:BlinkProperties.VisibleDynamicsValue>
+        <Binding Source="{x:Static nacd:DataItemProxyFactory.Instance}" Path="[Tags.语言切换].Value" Converter="{StaticResource VisibleDynamicsValueConverter}" ValidatesOnExceptions="True">
+          <Binding.FallbackValue>
+            <s:Boolean>True</s:Boolean>
+          </Binding.FallbackValue>
+        </Binding>
+      </nacb1:BlinkProperties.VisibleDynamicsValue>
+      <nai:ActionProperties.Actions>
+        <nai:ActionList>
+          <nata:MultiAction Name="Multi Action">
+            <nata:MultiAction.Actions>
+              <nai:ActionList>
+                <nata:Action Name="Set Language">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="SetLanguage" ObjectName="MultipleLanguages" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False">
+                      <nata:ActionMethodInfo.ActionParameterInfo>
+                        <nai:ActionParameterInfoList>
+                          <nata:ActionParameterInfo Position="0" Value="0 Default" ParameterName="languageName" ParameterTypeString="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" TagName="" />
+                        </nai:ActionParameterInfoList>
+                      </nata:ActionMethodInfo.ActionParameterInfo>
+                    </nata:ActionMethodInfo>
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+                <nata:Action Name="Reset Tag">
+                  <nata:Action.ActionMethodInfo>
+                    <nata:ActionMethodInfo Name="ResetTag" ObjectName="Tags.语言切换" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+                  </nata:Action.ActionMethodInfo>
+                </nata:Action>
+              </nai:ActionList>
+            </nata:MultiAction.Actions>
+            <nata:MultiAction.ActionMethodInfo>
+              <nata:ActionMethodInfo Name="" ObjectName="" EventName="PreviewMouseDown" ReferenceType="Global" ObjectParentName="" ObjectPathProvider="" ObjectPath="" ExplicitAuditTrail="False" />
+            </nata:MultiAction.ActionMethodInfo>
+          </nata:MultiAction>
+        </nai:ActionList>
+      </nai:ActionProperties.Actions>
+      <Canvas Width="288" Height="288">
+        <nacc:Ellipse Stretch="Fill" Width="288" Height="288" Canvas.Left="0" Canvas.Top="0">
+          <nacc:Ellipse.Fill>
+            <RadialGradientBrush Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5" GradientOrigin="0.5,0.5">
+              <RadialGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#FF000000" Offset="0.872881" />
+                  <GradientStop Color="#FF9A9A9A" Offset="0.961864" />
+                  <GradientStop Color="#FF000000" Offset="1" />
+                </GradientStopCollection>
+              </RadialGradientBrush.GradientStops>
+              <RadialGradientBrush.RelativeTransform>
+                <TransformGroup />
+              </RadialGradientBrush.RelativeTransform>
+            </RadialGradientBrush>
+          </nacc:Ellipse.Fill>
+        </nacc:Ellipse>
+        <nacc:Ellipse Stretch="Fill" Fill="#FFFF0000" Width="256" Height="256" Canvas.Left="16" Canvas.Top="16.0001" />
+        <Viewbox Width="166.999" Height="133.55" Canvas.Left="30.8614" Canvas.Top="53.7444">
+          <Canvas Width="166.999" Height="133.55">
+            <Path Data="F1M45.0121,15.3933L18.0048,96.4151 90.0242,42.4005 0,42.4005 81.0218,96.4151 45.0121,15.3933z" Stretch="Fill" Fill="#FFFFFF00" Width="90.0242" Height="81.0218" Canvas.Left="0" Canvas.Top="15.3933" />
+            <Path Data="F1M150.79,73.2841L141.788,100.291 165.795,82.2865 135.786,82.2865 162.794,100.291 150.79,73.2841z" Stretch="Fill" Fill="#FFFFFF00" Width="30.0081" Height="27.0073" Canvas.Left="135.786" Canvas.Top="73.2841" />
+            <Path Data="F1M110.073,4.92181L123.816,29.8529 126.864,0 106.514,22.0536 138.061,14.4154 110.073,4.92181z" Stretch="Fill" Fill="#FFFFFF00" Width="31.5472" Height="29.8529" Canvas.Left="106.514" Canvas.Top="0" />
+            <Path Data="F1M144.953,31.278L147.852,59.5982 162.331,33.3147 134.977,45.6537 166.999,50.9609 144.953,31.278z" Stretch="Fill" Fill="#FFFFFF00" Width="32.0219" Height="28.3202" Canvas.Left="134.977" Canvas.Top="31.278" />
+            <Path Data="F1M109.951,109.359L124.96,133.55 126.467,103.58 107.279,126.652 138.391,117.4 109.951,109.359z" Stretch="Fill" Fill="#FFFFFF00" Width="31.1124" Height="29.9702" Canvas.Left="107.279" Canvas.Top="103.58" />
+          </Canvas>
+        </Viewbox>
+        <nacc:Ellipse Stretch="Fill" Width="256" Height="256" Canvas.Left="16.0001" Canvas.Top="16">
+          <nacc:Ellipse.Fill>
+            <LinearGradientBrush StartPoint="0.500874,0.000662804" EndPoint="0.500874,1.00066">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#00000000" Offset="0" />
+                  <GradientStop Color="#40000000" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </nacc:Ellipse.Fill>
+        </nacc:Ellipse>
+        <Path Data="F1M247.993,160L239.963,160C208,160 176,144 144,144 112,144 80.0002,160 48.0739,160L39.9932,160C31.1567,160 23.9932,152.837 23.9932,144 23.9932,77.7258 77.719,24 143.993,24 210.267,24 263.993,77.7258 263.993,144 263.993,152.837 256.83,160 247.993,160z" Stretch="Fill" Width="240" Height="136" Canvas.Left="23.9932" Canvas.Top="24">
+          <Path.Fill>
+            <LinearGradientBrush StartPoint="0.499956,-0.000664206" EndPoint="0.499956,0.999336">
+              <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                  <GradientStop Color="#CCFFFFFF" Offset="0" />
+                  <GradientStop Color="#40FFFFFF" Offset="1" />
+                </GradientStopCollection>
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Path.Fill>
+        </Path>
+      </Canvas>
+    </nacs:SymbolViewbox>
+  </nac:Group>
+</natss:NeoElementCanvas>
